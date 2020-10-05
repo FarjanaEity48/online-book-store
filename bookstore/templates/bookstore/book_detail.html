@@ -1,12 +1,12 @@
 {% extends 'bookstore/main.html' %} {% block content %} {% load static%}
-{% for book in books %}
+
 <div class="card w-75">
   <div class="card-body">
     <img src="{{ book.book_pic.url }}" class="img-fluid" height="220px" width="550px" />
     <h5 class="card-title">{{book.book_title}}</h5>
     <p class="card-text">{{book.book_desc}}</p>
-    <a href="{% url 'book_detail' book.pk %}" class="btn btn-primary">Button</a>
+    <a href="" class="btn btn-primary">Button</a>
   </div>
 </div>
-{% endfor %}
+
 {% endblock %}
